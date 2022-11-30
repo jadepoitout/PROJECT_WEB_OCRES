@@ -1,0 +1,18 @@
+.body {
+    height: 100%;
+    width: 100%;
+    background-image: url(accueil.jpg);
+    background-size: cover;
+    background-color: orange;
+    opacity: 0.6;
+}
+
+.form {
+    height: 100vh;
+    margin-left:100px;
+    width: 100%;
+}
+
+
+
+
