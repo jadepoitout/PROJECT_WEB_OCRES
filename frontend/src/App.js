@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Accueil from './pages/Accueil';
 import Calendrier from './pages/Calendrier';
 import Profil from './pages/Profil';

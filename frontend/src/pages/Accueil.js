@@ -1,14 +1,23 @@
+import Dashboard from "../components/Dashboard";
 import Navbar from "../components/Navbar";
+import '../components/pp2.jpg';
 
 function Accueil ()
 {
     return(
         <div>
             <Navbar />
-            <h1>ACCUEIL</h1>
-        <br />
-        <p> J'adore le sport hihi
-        </p>
+          <div> 
+           <Dashboard>
+           </Dashboard></div>
+
+           <div>
+            <Widget1>
+            </Widget1>
+           </div>
+
+    <h1>ACCUEIL</h1>   
+
 
         </div>
     )
