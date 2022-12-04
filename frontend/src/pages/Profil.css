@@ -1,0 +1,13 @@
+.profil {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+}
+
+.titre {
+
+    position: absolute;
+    margin-left: 30%;
+    color: black;
+}

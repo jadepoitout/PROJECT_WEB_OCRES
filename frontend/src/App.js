@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from './pages/Accueil';
 import Calendrier from './pages/Calendrier';
-import Profil from './pages/Profil';
+import Profil from './pages/Profil_p';
 
 function App ()  {
 

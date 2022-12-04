@@ -1,50 +1,53 @@
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import './Navbar.css';
-import './pp2.jpg';
+import image from '../components/pp2.jpg';
 import './menu.png';
 
 function Navbar() {
-    return (
-        <div className ="navigation">
-        <ul>
+  return (
+    <div className="navigation">
+      <ul>
+        <div id="admin">
           <h1>Marine DUPONT</h1>
-        
-          <div className="box">
-            <img src="pp2.jpg" alt="" border-radius="50%" height="10px" margin="5px" float="left" ></img></div>
-          
-          <br />
-         
-          
-            <NavLink to="/">
-                <li>Accueil</li>
-            </NavLink><br />
+          <img src={image} id="box" alt="/" ></img>
 
-            <NavLink to="/calendrier">
-                <li>Calendrier</li>
-            </NavLink><br />
-
-            <NavLink to="/profil">
-                <li>Profil</li>
-            </NavLink><br />
-
-          </ul>
-        
-       
-
-        <img src="menu.png" alt="menu hamburger" class="menu-hamburger"></img>
-        
         </div>
 
+        <br />
 
-/*ce qui permet d'ouvrir et fermer le menu hamburger (à chaque click)*/
-        /*<script>
-            const menuHamburger = document.querySelector(".menu-hamburger")
-            const navigation = document.querySelector(".navigation")
-            menuHamburger.addEventListener ("click", ()=>(navigation.classicList.toggle('mobile-menu')))
+        <div>
+          <NavLink to="/">
+            <li>Accueil</li>
+          </NavLink><br />
+        </div>
+        <div>
+          <NavLink to="/calendrier">
+            <li>Calendrier</li>
+          </NavLink><br />
+        </div>
+        <div>
+          <NavLink to="/profil">
+            <li>Profil</li>
+          </NavLink><br />
+        </div>
+      </ul>
 
-        </script>*/    
-    )
 
-    }
-    
-    export default Navbar;
+
+      <img src="menu.png" alt="menu hamburger" class="menu-hamburger"></img>
+
+    </div>
+
+
+    /*ce qui permet d'ouvrir et fermer le menu hamburger (à chaque click)*/
+    /*<script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navigation = document.querySelector(".navigation")
+        menuHamburger.addEventListener ("click", ()=>(navigation.classicList.toggle('mobile-menu')))
+
+    </script>*/
+  )
+
+}
+
+export default Navbar;

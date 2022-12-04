@@ -1,16 +1,20 @@
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import Ccalendrier from "../components/Ccalendrier";
+import './Accueil.css';
+import './Calendrier.css';
 
 
 function Calendrier ()
 {
     return(
         <div>
+            
             <Navbar />
+            <h1 className="titre">Mes Dates importantes</h1>
             <div>
-     <Dashboard>
-    </Dashboard></div>
-            <h1>Mes Dates importantes</h1>
+     <Ccalendrier>
+    </Ccalendrier></div>
+            
         </div>
     )
 }
