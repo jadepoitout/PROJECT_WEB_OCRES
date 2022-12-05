@@ -23,6 +23,11 @@ const ProfilSchema = new mongoose.Schema({
         required: true,
 
     },
+
+    profilActivite: {
+        type: Number,
+        required: true,
+    }
 });
 
 const Profil = mongoose.model("Profil", ProfilSchema);

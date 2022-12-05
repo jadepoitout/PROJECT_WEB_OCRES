@@ -1,13 +1,18 @@
-.accueil {
 
-    display: flex;
-    justify-content: space-around;
-    background-color: brown;
-}
 
 .titre {
 
     position: absolute;
     margin-left: 30%;
     color: black;
+}
+
+.fondA {
+
+    height: 950px;
+    max-height: 100%;
+
+    max-width: 100%;
+    background: url(../components/accueil.jpg);
+    
 }

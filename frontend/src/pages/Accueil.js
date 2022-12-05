@@ -3,21 +3,28 @@ import Navbar from "../components/Navbar";
 import '../components/pp2.jpg';
 import Widget1 from '../components/Widget1';
 import './Accueil.css';
+import React from "react";
 
-function Accueil() {
-    return (
-        <div >
-            <h1 className="titre">ACCUEIL</h1>
-            <Navbar />
-            
+class Accueil extends React.Component {
 
-            <div>
-                <Dashboard>
-                </Dashboard>
+
+    render() {
+
+
+
+        return (
+            <div className="fondA">
+                <div>
+                <h1 className="titre">ACCUEIL</h1>
+                <Navbar />
+                
+                    <Dashboard>
+                    </Dashboard>
+                    </div>
+
             </div>
-
-        </div>
-    )
+        )
+    }
 }
 
 export default Accueil;

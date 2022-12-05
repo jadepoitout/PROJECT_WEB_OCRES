@@ -1,11 +1,34 @@
 .widget1 {
 
-    background-color: aqua;
+    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
+    border: solid;
+    border-radius: 5%;
     width: 250px;
     height: 250px;
-    margin-left: 13%;
-    margin-top: 10%;
     text-align: center;
+    box-shadow: 10px 10px 5em;
 
+
+}
+
+.widget6 {
+
+    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
+    border: solid;
+    border-radius: 5%;
+    width: 650px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 10px 10px 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.neon {
+
+    text-shadow: 1px 1px 2px rgba(223, 147, 59, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
 
 }

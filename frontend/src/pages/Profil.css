@@ -21,4 +21,37 @@
     font-size: 20px;
 }
 
-.style 
+.style {
+    position: absolute;
+    margin-left: 80%;
+    margin-top:40%;
+    border: 0;
+    line-height: 3;
+    padding: 0 20px;
+    font-size: 1 rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+background-color: rgb(220, 98, 57);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+
+#fondP {
+
+    height: 950px;
+    max-height: 100%;
+    max-width: 100%;
+    background-image: url(../components/accueil.jpg);
+    background-color: bisque, 0.7;
+    
+}
+
+#form2 {
+
+    background-color: rgba(223, 147, 59, 0.8);
+    max-width: 84%;
+    margin-left: 18.06%;
+
+}

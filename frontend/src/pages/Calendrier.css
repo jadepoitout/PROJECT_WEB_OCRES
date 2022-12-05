@@ -1,13 +1,18 @@
-.calendrier {
-
-    display: flex;
-    justify-content: space-around;
-    background-color: brown;
-}
 
 .titre {
 
     position: absolute;
     margin-left: 30%;
     color: black;
+}
+
+.fondC {
+
+    height: 950px;
+    max-height: 100%;
+
+    max-width: 100%;
+    background-image: url(../components/accueil.jpg);
+    background-color: bisque, 0.7;
+    
 }

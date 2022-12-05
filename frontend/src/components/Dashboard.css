@@ -1,17 +1,17 @@
-.body {
-    height: 100%;
+#fondD {
+
+    /*background-color: rgba(223, 147, 59, 0.8);*/
     max-width: 100%;
-    background-image: url(accueil.jpg);
-    background-size: cover;
-    background-color: orange;
-    opacity: 0.6;
+    max-height: 100%;
+    margin-left: 18.06%;
+
 }
 
-.form {
-    height: 700px;
-    margin-left: 200px;
-    margin-right: 60px;
-    max-width: 100%;
+.orga {
+
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 4%;
 }

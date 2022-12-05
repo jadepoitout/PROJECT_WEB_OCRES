@@ -1,17 +1,32 @@
-.body {
-    height: 100%;
-    max-width: 100%;
-    background-image: url(accueil.jpg);
-    background-size: cover;
-    background-color: orange;
-    opacity: 0.6;
-}
+#fond {
 
-.form {
-    height: 700px;
-    margin-left: 200px;
-    margin-right: 60px;
-    max-width: 100%;
+    /* background-color: rgba(223, 147, 59, 0.8); */
+    max-width: 84%;
+    margin-left: 18.06%;
+    height: 750px;
+
+}
+#orga {
+
+
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
 }
+
+#essai {
+
+    margin-top: 20%;
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
+    border: solid;
+    border-radius: 4px 8px;
+    border-radius:  5%;
+    text-align: center;
+    box-shadow: 10px 10px 5em;
+
+}
+
+

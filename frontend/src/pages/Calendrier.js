@@ -1,13 +1,12 @@
 import Navbar from "../components/Navbar";
 import Ccalendrier from "../components/Ccalendrier";
-import './Accueil.css';
 import './Calendrier.css';
 
 
 function Calendrier ()
 {
     return(
-        <div>
+        <div className="fondC">
             
             <Navbar />
             <h1 className="titre">Mes Dates importantes</h1>

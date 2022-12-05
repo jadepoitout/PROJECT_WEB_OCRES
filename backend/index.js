@@ -47,7 +47,7 @@ useNewUrlParser: true,
 //});
 
 app.get('/', async (req,res) => {
-   const profil = new ProfilModel({profilNom: "DUPONT", profilPrenom: "Marine", profilAge: 24, profilWeight: 65});
+   const profil = new ProfilModel({profilNom: "DUPONT", profilPrenom: "Marine", profilAge: 24, profilWeight: 65, profilActivite: 3});
 
    try {
     console.log(profil);
@@ -63,3 +63,4 @@ app.get('/', async (req,res) => {
 
 
 });
+
