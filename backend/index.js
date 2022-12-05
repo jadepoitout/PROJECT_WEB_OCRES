@@ -1,6 +1,9 @@
+import './models/Profil.js';
+
 //*Variable qui nous permettra d'utiliser les fonctionnalités du Module Express*/
 const express = require("express");
 const mongoose = require("mongoose");
+const cors=require('cors');
 /*création de l'app*/
 const app = express ();
 
@@ -12,42 +15,27 @@ const ProfilModel = require("./models/Profil.js");
 
 /*permet de recevoir les infos du frontend*/
 app.use(express.json());
+app.use(cors());
+
 //app.use(pro());
 
-
-mongoose.connect("mongodb+srv://jade_poitout:technowen2022@cluster0.u5kwszo.mongodb.net/profil?retryWrites=true&w=majority" /*correspond à la mongodb data base*/, {
+mongoose.connect("mongodb+srv://jade_poitout:technoweb2022@cluster0.u5kwszo.mongodb.net/profil?retryWrites=true&w=majority" /*correspond à la mongodb data base*/, {
 useNewUrlParser: true,
 });
 
 /*var router = express.Router();*/
 
-//A changer et à relier au frontend
-/*Création d'une route(point dans notre API qui peut être requêtée). Implémentation de GET et PUT*/
-/* GET homepage. */
-/*app.get('/Accueil', (req, res) => {
-  res.json({
-    req: req.method,*/ /*objet de requête*/
-    /*data: "This is a GET homepage"})  *//*objet de réponse*/
-//});
 
-/*PUT*/
-/*app.put('/Calendrier', (req, res) => {
-  res.json({
-    req: req.method, *//*objet de requête*/
-    /*data: "This is a PUT page" *//*objet de réponse*/
-  //});
-//});
+//Permet la mise à jour des données
+app.post('/insert', async (req,res) => {
 
-/*POST*/
-/*app.post('/Profil', (req,res) => {
-  res.json({
-    req: req.method, *//*objet de requête*/
-    /*data: "This is a POST page" *//*objet de réponse*/
-  //});
-//});
+   const nom= req.body.nom
+   const prenom= req.body.prenom
+   const age= req.body.age
+   const poids= req.body.poids
+   const activite= req.body.activite
 
-app.get('/', async (req,res) => {
-   const profil = new ProfilModel({profilNom: "DUPONT", profilPrenom: "Marine", profilAge: 24, profilWeight: 65, profilActivite: 3});
+   const profil = new ProfilModel({profilNom: nom, profilPrenom: prenom, profilAge: age, profilWeight: poids, profilActivite: activite});
 
    try {
     console.log(profil);
