@@ -12,6 +12,8 @@ import {
   } from 'chart.js';
   import { Line } from 'react-chartjs-2';
 
+  /*Graphique qui prend en compte le poids de Marine en fonction des mois de l'année*/
+  
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -32,14 +34,14 @@ import {
     
   };
   
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   
   export const data = {
     labels,
     datasets: [
       {
         label: 'Dataset 1',
-        data: ['60', '62', '68', '70', '73', '75', '76', '74', '70', '68', '66', '65'],
+        data: ['4', '5', '3', '6', '7', '9', '4'],
         borderColor: 'rgba(223, 147, 59)',
         backgroundColor: 'rgba(223, 147, 59,0.8)',
       },

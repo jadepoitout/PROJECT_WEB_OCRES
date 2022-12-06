@@ -3,12 +3,32 @@ import React from 'react';
 
 
 class Widget5 extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {
+            items: []
+        };
+    }
+    
+    /*Appel de l'API qu'on rentre dans un tableau d'objet*/
+    componentDidMount() {
+        fetch('https://data.iledefrance.fr/api/records/1.0/search/?dataset=recensement-des-equipements-sportifs&q=&rows=10&facet=famille&refine.utilisateurs=Individuel(s)%20%2F%20Famille(s)')
+            .then((response) => response.json())
+             //.then((data) => console.log(data.records))
+            .then((food) => this.setState({ items: food.records[0].fields }))
+    }
+
+    /*Affichage des données*/
     render() {
         return (
             <div className="widget1">
     
-                        Widget 5
-            </div>
+    <h3> Derniere activite externe </h3>
+
+<h2 className='neon'>  {this.state.items.famille} - {this.state.items.insnom}</h2>
+<p>  Grade de nutrition : {this.state.items.deplib} {this.state.items.cominsee} </p>
+           </div>
     
     
         );

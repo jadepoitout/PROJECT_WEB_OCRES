@@ -3,6 +3,7 @@ import './Navbar.css';
 import image from '../components/pp2.jpg';
 import './menu.png';
 
+/*Définition de la Navbar et création des NavLinks entre les pages*/
 function Navbar() {
   return (
     <div className="navigation">
@@ -38,14 +39,6 @@ function Navbar() {
 
     </div>
 
-
-    /*ce qui permet d'ouvrir et fermer le menu hamburger (à chaque click)*/
-    /*<script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navigation = document.querySelector(".navigation")
-        menuHamburger.addEventListener ("click", ()=>(navigation.classicList.toggle('mobile-menu')))
-
-    </script>*/
   )
 
 }

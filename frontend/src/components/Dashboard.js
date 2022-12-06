@@ -7,30 +7,28 @@ import Widget4 from './Widget4';
 import Widget5 from './Widget5';
 import Widget6 from './Widget6';
 
-
+/*Appel des différents Widgets sur le Dashboard principal*/
 function Dashboard(props) {
     return (
         <div id='fondD'>
             <div className='orga'>
 
+            <Widget2>
+                </Widget2>
 
                 <Widget1>
-                </Widget1>
-
-                <Widget2>
-                </Widget2>
+                </Widget1>                
 
                 <Widget3>
                 </Widget3>
 
                 <Widget4>
-                </Widget4>               
+                </Widget4>
 
 
             </div>
-            <div className='orga'>
+            <div className='orga'>                
 
-                
 
                 <Widget5>
                 </Widget5>
