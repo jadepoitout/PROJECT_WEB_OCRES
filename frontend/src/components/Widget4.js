@@ -45,13 +45,13 @@ function Widget4 () {
             <div className="widget1">
     
     <div className="usersDisplay">
-        {listofCoach.slice(0,1).map((user) => {
+        {listofCoach.slice(1,2).map((user) => {
           return (
              
             <ul className='dispo'>
 
                <img id="logo" src={image} />
-              <h1 className='neon'> {user.name} </h1> 
+              <p className='neon'> {user.name} </p> 
               <p className='neon'> {user.contact} </p> 
               <p className='neon'> {user.specialite} </p> 
 

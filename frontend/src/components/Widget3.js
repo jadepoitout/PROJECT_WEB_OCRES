@@ -31,7 +31,7 @@ function Widget3 () {
             <ul className='dispo'>
 
                <img id="logo" src={image} />
-              <h1 className='neon'> {user.name} </h1> 
+              <p className='neon'> {user.name} </p> 
               <p className='neon'> {user.contact} </p> 
               <p className='neon'> {user.specialite} </p> 
 

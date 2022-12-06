@@ -10,7 +10,7 @@ function Navbar() {
       <ul>
         <div id="admin">
           <h1>Marine DUPONT</h1>
-          <img src={image} id="box" alt="/" ></img>
+          <img src={image} id="box" alt="/" />
 
         </div>
 

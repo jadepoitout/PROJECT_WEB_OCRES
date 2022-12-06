@@ -50,6 +50,64 @@ function Profil ()
             <button class="style"
                     a href="#"
                     onClick="href='localhost:3000/profilmodif';">Modifier mes données</button>
+                    <div className="usersDisplay">
+        {listOfUsers.slice(1,2).map((user) => {
+          return (
+            <div>
+              <h1>Name: {user.name}</h1>
+              <h1>Surname: {user.surname}</h1>
+              <h1>Age: {user.age}</h1>
+              <h1>Weight: {user.weight}</h1>
+              <h1>Activity: {user.activity}</h1>
+            </div>
+          );
+        })}
+      </div>
+
+      <div id="taille" >
+        <div><input
+          type="text"
+          placeholder="Name..."
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
+        /></div>
+        
+        <div><input
+          type="text"
+          placeholder="Surname..."
+          onChange={(event) => {
+            setSurname(event.target.value);
+          }}
+        /></div>
+         
+         <div><input
+          type="number"
+          placeholder="Age..."
+          onChange={(event) => {
+            setAge(event.target.value);
+          }}
+        /></div>
+        
+        <div></div>
+        <input
+          type="text"
+          placeholder="Weight..."
+          onChange={(event) => {
+            setWeight(event.target.value);
+          }}
+        />
+        <div></div>
+        <input
+          type="text"
+          placeholder="Activity..."
+          onChange={(event) => {
+            setActivity(event.target.value);
+          }}
+        />
+<div><button onClick={createUser}> Create User </button></div>
+        
+      </div>
 
 
             
