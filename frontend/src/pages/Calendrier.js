@@ -8,10 +8,6 @@ import { useState, useEffect } from "react";
 function Calendrier ()
 {
 
-  
-
-
-
     return(
         <div className="fondC">
             
