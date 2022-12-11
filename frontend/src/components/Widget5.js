@@ -24,10 +24,10 @@ class Widget5 extends React.Component {
         return (
             <div className="widget1">
     
-    <h3> Derniere activite externe </h3>
+    <h3> Dernière activité externe </h3>
 
 <h2 className='neon'>  {this.state.items.famille} - {this.state.items.insnom}</h2>
-<p>  Grade de nutrition : {this.state.items.deplib} {this.state.items.cominsee} </p>
+<p>  Localisation: {this.state.items.deplib} {this.state.items.cominsee} </p>
            </div>
     
     

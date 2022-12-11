@@ -4,7 +4,7 @@
     border: solid;
     border-radius: 5%;
     width: 200px;
-    height: 200px;
+    height: 260px;
     text-align: center;
     box-shadow: 10px 10px 5em;
     margin-left: 25px;
@@ -39,6 +39,7 @@
 #photo {
 
     height: 70px;
+    
 }
 
 #logo {

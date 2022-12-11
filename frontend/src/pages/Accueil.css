@@ -3,7 +3,10 @@
 .titre {
 
     position: absolute;
-    margin-left: 30%;
+    margin-left: 50%;
+    margin-top:10px;
+    font-size: 35px;
+    text-align:center;
     color: black;
 }
 

@@ -47,9 +47,7 @@ function Profil ()
             <h1 className="titre">Mon Profil</h1>
             <p1 className="titre2">Mes données personnelles</p1>
 
-            <button class="style"
-                    a href="#"
-                    onClick="href='localhost:3000/profilmodif';">Modifier mes données</button>
+
                     <div className="usersDisplay">
         {listOfUsers.slice(1,2).map((user) => {
           return (
@@ -105,13 +103,10 @@ function Profil ()
             setActivity(event.target.value);
           }}
         />
-<div><button onClick={createUser}> Create User </button></div>
+<div><button onClick={createUser}> Modification des données </button></div>
         
       </div>
-
-
-            
-            
+           
         </div>
 
         
