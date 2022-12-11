@@ -14,13 +14,13 @@ function Profil ()
   const [activity, setActivity] = useState(0);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getUsers").then((response) => {
+    Axios.get("http://localhost:3000/getUsers").then((response) => {
       setListOfUsers(response.data);
     });
   }, []);
 
   const createUser = () => {
-    Axios.post("http://localhost:3001/createUser", {
+    Axios.post("http://localhost:3000/createUser", {
       name,
       surname,
       age,
@@ -60,51 +60,6 @@ function Profil ()
             </div>
           );
         })}
-      </div>
-
-      <div id="taille" >
-        <div><input
-          type="text"
-          placeholder="Name..."
-          onChange={(event) => {
-            setName(event.target.value);
-          }}
-        /></div>
-        
-        <div><input
-          type="text"
-          placeholder="Surname..."
-          onChange={(event) => {
-            setSurname(event.target.value);
-          }}
-        /></div>
-         
-         <div><input
-          type="number"
-          placeholder="Age..."
-          onChange={(event) => {
-            setAge(event.target.value);
-          }}
-        /></div>
-        
-        <div></div>
-        <input
-          type="text"
-          placeholder="Weight..."
-          onChange={(event) => {
-            setWeight(event.target.value);
-          }}
-        />
-        <div></div>
-        <input
-          type="text"
-          placeholder="Activity..."
-          onChange={(event) => {
-            setActivity(event.target.value);
-          }}
-        />
-<div><button onClick={createUser}> Modification des données </button></div>
-        
       </div>
            
         </div>

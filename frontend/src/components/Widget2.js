@@ -13,13 +13,13 @@ function Widget2() {
   const [activity, setActivity] = useState(0);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getUsers").then((response) => {
+    Axios.get("http://localhost:3000/getUsers").then((response) => {
       setListOfUsers(response.data);
     });
   }, []);
 
   const createUser = () => {
-    Axios.post("http://localhost:3001/createUser", {
+    Axios.post("http://localhost:3000/createUser", {
       name,
       surname,
       age,
@@ -45,9 +45,8 @@ function Widget2() {
 <h3> Fréquence d'activité physique par semaine </h3>
     
     <div className="usersDisplay">
-        {listOfUsers.slice(1,2).map((user) => {
+        {listOfUsers.map((user) => {
           return (
-             
               <p>En moyenne : <h1 className='neon'> {user.activity} </h1> </p>
           );
         })}

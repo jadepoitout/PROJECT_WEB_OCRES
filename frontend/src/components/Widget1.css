@@ -1,15 +1,23 @@
 .widget1 {
 
-    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
-    border: solid;
-    border-radius: 5%;
+    /*background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);*/
+    background-color: rgb(63, 63, 66);
     width: 200px;
     height: 260px;
     text-align: center;
-    box-shadow: 10px 10px 5em;
+    /*box-shadow: 10px 10px 5em;*/
     margin-left: 25px;
     margin-right: 10px;
+    color: rgb(255, 255, 255);
+    transition: width 0.4s, height 0.4s, background-color 0.4s, transform 0.4s;
 
+}
+
+.widget1:hover {
+
+    -ms-transform: scale(1) translate(10px);
+    -webkit-transform: scale(1) translate(10px);
+    transform: scale(1) translate(10px);
 
 }
 
@@ -26,13 +34,22 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    transition: width 0.4s, height 0.4s, background-color 0.4s, transform 0.4s;
 
+}
+
+.widget6:hover {
+
+    -ms-transform: scale(1) translate(10px);
+    -webkit-transform: scale(1) translate(10px);
+    transform: scale(1) translate(10px);
 
 }
 
 .neon {
 
-    text-shadow: 1px 1px 2px rgba(223, 147, 59, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
+    color:  rgba(223, 147, 59) ;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
 
 }
 

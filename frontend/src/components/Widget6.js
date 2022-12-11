@@ -1,4 +1,6 @@
 import './Widget1.css';
+import Axios from "axios";
+import { useState, useEffect } from "react";
 import React from 'react';
 import {
     Chart as ChartJS,
@@ -33,15 +35,38 @@ import {
       },
     
   };
+
+ const tab = [];
   
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const Widget6 = () => {
+
+  const [listOfUsers, setListOfUsers] = useState([]);
+
+  useEffect(() => {
+    Axios.get("http://localhost:3000/getUsers").then((response) => {
+      
+      setListOfUsers(response.data);
+
+      tab[0] = listOfUsers.map(jan=> jan.weightj)
+      tab[1] = listOfUsers.map(feb=> feb.weightf)
+      tab[2] = listOfUsers.map(mar=> mar.weightm)
+      tab[3] = listOfUsers.map(apr=> apr.weighta)
+      tab[4] = listOfUsers.map(may=> may.weightma)
+
+      console.log(tab)
+    });
+
+  }, []);
+
+  const labels = ['January', 'February', 'March', 'April', 'May'];
   
-  export const data = {
+   const data = {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
-        data: ['4', '5', '3', '6', '7', '9', '4'],
+        label: 'Poids',
+        data:tab.map((poids) => poids[0]),
+        /*data: ['4', '5', '3', '6', '7', '9', '4'],*/
         borderColor: 'rgba(223, 147, 59)',
         backgroundColor: 'rgba(223, 147, 59,0.8)',
       },
@@ -49,8 +74,6 @@ import {
   };
 
 
-class Widget6 extends React.Component {
-    render() {
         return (
             <div className="widget6">
     
@@ -59,7 +82,7 @@ class Widget6 extends React.Component {
     
 
         );
-        }
+        
     }
     
     export default Widget6;

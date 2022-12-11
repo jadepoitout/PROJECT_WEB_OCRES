@@ -13,7 +13,23 @@ const DriverSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  weight: {
+  weightj: {
+    type: Number,
+    required: true,
+  },
+  weightf: {
+    type: Number,
+    required: true,
+  },
+  weightm: {
+    type: Number,
+    required: true,
+  },
+  weighta: {
+    type: Number,
+    required: true,
+  },
+  weightjma: {
     type: Number,
     required: true,
   },

@@ -50,6 +50,6 @@ app.post("/createCoach", async (req, res) => {
   res.json(coach);
 });
 
-app.listen(3002, () => {
+app.listen(3000, () => {
   console.log("SERVER RUNS PERFECTLY!");
 });

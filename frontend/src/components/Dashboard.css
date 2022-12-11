@@ -7,11 +7,40 @@
 
 }
 
-.orga {
+.orga1 {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 8%;
     padding-bottom: 4%;
+}
+
+.orga2 {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+
+.style-button {
+    
+    margin-right: 20%;
+    margin-top:10%;
+    border: 0;
+    width: 300px;
+    line-height: 3;
+    font-size: 1 rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
+    /*background-color: rgb(220, 98, 57);*/
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
 }

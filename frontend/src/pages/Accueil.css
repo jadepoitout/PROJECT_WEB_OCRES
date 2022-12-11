@@ -2,20 +2,27 @@
 
 .titre {
 
+    color: rgb(255, 255, 255);
     position: absolute;
-    margin-left: 50%;
+    margin-left: 80%;
     margin-top:10px;
     font-size: 35px;
     text-align:center;
-    color: black;
+    
 }
 
 .fondA {
 
     height: 950px;
     max-height: 100%;
-
     max-width: 100%;
-    background: url(../components/accueil.jpg);
+    background: rgb(52, 52, 52);
     
+    
+}
+
+.fondA h1 {
+
+    color: white;
+
 }

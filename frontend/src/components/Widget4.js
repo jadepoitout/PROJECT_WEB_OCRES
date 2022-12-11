@@ -15,14 +15,14 @@ function Widget4 () {
   const [specialite, setWeight] = useState("");
 
   useEffect(() => {
-    Axios.get("http://localhost:3002/getCoachs").then((response) => {
+    Axios.get("http://localhost:3000/getCoachs").then((response) => {
       setListofCoach(response.data);
     });
   }, []);
 
 
   const createUser = () => {
-    Axios.post("http://localhost:3002/createCoach", {
+    Axios.post("http://localhost:3000/createCoach", {
       name,
       contact,
       photo,
@@ -45,7 +45,7 @@ function Widget4 () {
             <div className="widget1">
     
     <div className="usersDisplay">
-        {listofCoach.slice(1,2).map((user) => {
+        {listofCoach.slice(listofCoach.length-1,listofCoach.length).map((user) => {
           return (
              
             <ul className='dispo'>

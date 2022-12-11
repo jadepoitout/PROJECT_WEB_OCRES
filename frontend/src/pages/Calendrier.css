@@ -12,7 +12,7 @@
     max-height: 100%;
 
     max-width: 100%;
-    background-image: url(../components/accueil.jpg);
     background-color: bisque, 0.7;
+    background: linear-gradient(to bottom , rgb(240, 124, 23), rgb(192, 50, 50));
     
 }

@@ -23,6 +23,10 @@
     font-size: 20px;
 }
 
+
+
+
+
 .style {
     position: absolute;
     margin-left: 80%;
@@ -45,8 +49,8 @@ background-color: rgb(220, 98, 57);
     height: 950px;
     max-height: 100%;
     max-width: 100%;
-    background-image: url(../components/accueil.jpg);
     background-color: bisque, 0.7;
+    background: linear-gradient(to bottom , rgb(240, 124, 23), rgb(192, 50, 50));
     
 }
 
@@ -64,7 +68,3 @@ background-color: rgb(220, 98, 57);
     padding-top: 10%;
 }
 
-#taille{
-
-    margin-left: 30%;
-}

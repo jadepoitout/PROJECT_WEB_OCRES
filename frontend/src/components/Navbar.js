@@ -2,6 +2,10 @@ import { NavLink } from "react-router-dom"
 import './Navbar.css';
 import image from '../components/pp2.jpg';
 import './menu.png';
+import { FaHome } from 'react-icons/fa';
+import {AiOutlineCalendar } from 'react-icons/ai';
+import {CgProfile } from 'react-icons/cg';
+
 
 /*Définition de la Navbar et création des NavLinks entre les pages*/
 function Navbar() {
@@ -18,17 +22,18 @@ function Navbar() {
 
         <div>
           <NavLink to="/">
-            <li>Accueil</li>
+             <li> <FaHome /> Accueil</li>
           </NavLink><br />
         </div>
         <div>
           <NavLink to="/calendrier">
-            <li>Calendrier</li>
+          
+            <li> <AiOutlineCalendar /> Calendrier</li>
           </NavLink><br />
         </div>
         <div>
           <NavLink to="/profil">
-            <li>Profil</li>
+            <li><CgProfile /> Profil</li>
           </NavLink><br />
         </div>
       </ul>

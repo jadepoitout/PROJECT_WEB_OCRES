@@ -1,15 +1,16 @@
 .navigation {
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.7;
-    height: 100%;
+    background-color: rgb(0, 0, 0,0.7);
+    /*opacity: 0.2;*/
+    /*background-image: url(./accueilf.jpg);*/
+    background-size: cover;
+    height: 100%; 
     max-height: 100%;
     width: 100px;
     display: flex;
     /*pour aligner les éléments*/
     justify-content: space-around;
     padding: 50px;
-    /*0.2rem calc((100vw - 1000px) / 2);*/
     z-index: 12;
     
 }

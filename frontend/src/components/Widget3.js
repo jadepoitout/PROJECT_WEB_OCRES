@@ -14,7 +14,7 @@ function Widget3 () {
   const [specialite, setWeight] = useState("");
 
   useEffect(() => {
-    Axios.get("http://localhost:3002/getCoachs").then((response) => {
+    Axios.get("http://localhost:3000/getCoachs").then((response) => {
       setListofCoach(response.data);
     });
   }, []);
