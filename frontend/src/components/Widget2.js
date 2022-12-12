@@ -47,7 +47,7 @@ function Widget2() {
     <div className="usersDisplay">
         {listOfUsers.map((user) => {
           return (
-              <p>En moyenne : <h1 className='neon'> {user.activity} </h1> </p>
+              <p>En moyenne : <h2 className='neon'> {user.activity} </h2> </p>
           );
         })}
       </div>

@@ -36,27 +36,28 @@ import {
     
   };
 
- const tab = [];
   
 const Widget6 = () => {
 
   const [listOfUsers, setListOfUsers] = useState([]);
+  const tab = [];
+
 
   useEffect(() => {
     Axios.get("http://localhost:3000/getUsers").then((response) => {
       
       setListOfUsers(response.data);
 
-      tab[0] = listOfUsers.map(jan=> jan.weightj)
-      tab[1] = listOfUsers.map(feb=> feb.weightf)
-      tab[2] = listOfUsers.map(mar=> mar.weightm)
-      tab[3] = listOfUsers.map(apr=> apr.weighta)
-      tab[4] = listOfUsers.map(may=> may.weightma)
-
       console.log(tab)
     });
 
   }, []);
+
+  tab[0] = listOfUsers.map(jan=> jan.weightj)
+      tab[1] = listOfUsers.map(feb=> feb.weightf)
+      tab[2] = listOfUsers.map(mar=> mar.weightm)
+      tab[3] = listOfUsers.map(apr=> apr.weighta)
+      tab[4] = listOfUsers.map(may=> may.weightma)
 
   const labels = ['January', 'February', 'March', 'April', 'May'];
   
@@ -64,7 +65,7 @@ const Widget6 = () => {
     labels,
     datasets: [
       {
-        label: 'Poids',
+        label: 'Poids 1',
         data:tab.map((poids) => poids[0]),
         /*data: ['4', '5', '3', '6', '7', '9', '4'],*/
         borderColor: 'rgba(223, 147, 59)',

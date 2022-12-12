@@ -5,14 +5,21 @@
   background-color: brown;
 }
 
-#fondP {
+#fondM {
 
   height: 950px;
   max-height: 100%;
   max-width: 100%;
   background-color: bisque, 0.7;
-  background: linear-gradient(to bottom , rgb(240, 124, 23), rgb(192, 50, 50));
+  background: rgb(52, 52, 52);
   
+}
+
+#fondM h1 {
+
+  color: white;
+
+
 }
 
 #titre {

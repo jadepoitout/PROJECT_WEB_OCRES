@@ -24,10 +24,10 @@ class Widget1 extends React.Component {
     return (
         <div className="widget1">
             <h3> Apport du dernier repas </h3>
-
+            <img id="photo"src={this.state.items.image_front_url} />
                     <p>  Nutrition par personne:<p className='neon'>  {this.state.items.nutrition_data_per}</p> </p>
                     <p>  Grade de nutrition : {this.state.items.nutriscore_grade} </p>
-                    <img id="photo"src={this.state.items.image_front_url} />
+                    
         </div>
 
 

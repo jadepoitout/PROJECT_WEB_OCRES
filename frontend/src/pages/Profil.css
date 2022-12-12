@@ -46,12 +46,17 @@ background-color: rgb(220, 98, 57);
 
 #fondP {
 
-    height: 950px;
+    height: 800px;
     max-height: 100%;
     max-width: 100%;
     background-color: bisque, 0.7;
-    background: linear-gradient(to bottom , rgb(240, 124, 23), rgb(192, 50, 50));
+    background: rgb(52, 52, 52);
     
+}
+
+#fondP h1 {
+
+    color: white
 }
 
 #form2 {

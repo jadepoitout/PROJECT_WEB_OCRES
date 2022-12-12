@@ -34,7 +34,7 @@ function Coachmodif () {
   };
 
     return(
-        <div id="fondP">
+        <div id="fondM">
 
             <Navbar />
             <div id="titre"><h1>Ajout d'un coach</h1></div>*

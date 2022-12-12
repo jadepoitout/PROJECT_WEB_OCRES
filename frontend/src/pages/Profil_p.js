@@ -55,7 +55,7 @@ function Profil ()
               <h1>Name: {user.name}</h1>
               <h1>Surname: {user.surname}</h1>
               <h1>Age: {user.age}</h1>
-              <h1>Weight: {user.weight}</h1>
+              <h1>Weight: {user.weightj}</h1>
               <h1>Activity: {user.activity}</h1>
             </div>
           );

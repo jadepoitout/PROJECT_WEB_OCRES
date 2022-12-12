@@ -1,11 +1,10 @@
 .navigation {
     position: absolute;
-    background-color: rgb(0, 0, 0,0.7);
+    background-color:  rgba(223, 147, 59) ;
     /*opacity: 0.2;*/
     /*background-image: url(./accueilf.jpg);*/
     background-size: cover;
-    height: 100%; 
-    max-height: 100%;
+    height: 115%; 
     width: 100px;
     display: flex;
     /*pour aligner les éléments*/
@@ -100,7 +99,8 @@ li:hover {
     border: solid;
     border-width: 1px;
     border-color: azure;
-    max-width: 70px;
+    max-width: 50px;
+    margin-top: 15px;
     margin-left: 3%;
     box-shadow: 10px 10px 5em;
 

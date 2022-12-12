@@ -2,7 +2,6 @@
 
     /*background-color: rgba(223, 147, 59, 0.8);*/
     max-width: 100%;
-    max-height: 100%;
     margin-left: 18.06%;
 
 }
@@ -15,6 +14,7 @@
     flex-wrap: wrap;
     padding-top: 8%;
     padding-bottom: 4%;
+
 }
 
 .orga2 {
@@ -23,7 +23,6 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 8%;
     padding-bottom: 4%;
 }
 
@@ -32,15 +31,23 @@
     margin-right: 20%;
     margin-top:10%;
     border: 0;
+    border-radius: 10px;
     width: 300px;
     line-height: 3;
     font-size: 1 rem;
     text-align: center;
+    color: rgba(223, 147, 59) ;
+   /* background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);*/
+    background-color:white;
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);*/
+
+}
+
+.style-button:hover {
+
+    background-color: rgba(223, 147, 59) ;
     color: white;
-    border-radius: 10px;
-    background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);
-    /*background-color: rgb(220, 98, 57);*/
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
 
 }
