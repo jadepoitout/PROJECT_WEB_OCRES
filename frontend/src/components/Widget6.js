@@ -53,13 +53,13 @@ const Widget6 = () => {
 
   }, []);
 
-  tab[0] = listOfUsers.map(jan=> jan.weightj)
-      tab[1] = listOfUsers.map(feb=> feb.weightf)
-      tab[2] = listOfUsers.map(mar=> mar.weightm)
-      tab[3] = listOfUsers.map(apr=> apr.weighta)
-      tab[4] = listOfUsers.map(may=> may.weightma)
+  tab[0] = listOfUsers.map(aou=> aou.weightj)
+      tab[1] = listOfUsers.map(sep=> sep.weightf)
+      tab[2] = listOfUsers.map(oct=> oct.weightm)
+      tab[3] = listOfUsers.map(nov=> nov.weighta)
+      tab[4] = listOfUsers.map(dec=> dec.weightma)
 
-  const labels = ['January', 'February', 'March', 'April', 'May'];
+  const labels = ['August', 'September', 'October', 'November', 'December'];
   
    const data = {
     labels,

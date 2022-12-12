@@ -8,6 +8,7 @@
     margin-top:10px;
     font-size: 35px;
     text-align:center;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
@@ -15,8 +16,9 @@
 
     max-height: 100%;
     max-width: 100%;
-    background: rgb(52, 52, 52);
-    
+    background-color: url("../components/accueil.jpg");
+    background: rgb(52, 52, 52);   
+    opacity: 1.2;
     
 }
 

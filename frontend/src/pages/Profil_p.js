@@ -47,22 +47,26 @@ function Profil ()
             <h1 className="titre">Mon Profil</h1>
             <p1 className="titre2">Mes données personnelles</p1>
 
-
                     <div className="usersDisplay">
-        {listOfUsers.slice(1,2).map((user) => {
-          return (
+                   
+        {listOfUsers.slice(0,1).map((user) => { 
+          return ( 
             <div>
-              <h1>Name: {user.name}</h1>
-              <h1>Surname: {user.surname}</h1>
-              <h1>Age: {user.age}</h1>
-              <h1>Weight: {user.weightj}</h1>
-              <h1>Activity: {user.activity}</h1>
+              <hr></hr>
+              <h1>Nom: {user.name}</h1>
+              <h1>Prénom: {user.surname}</h1>
+              <h1>Âge: {user.age}</h1>
+              <h1>Poids: {user.weightj}</h1>
+              <h1>Fréquence d'activité physique par semaine: {user.activity}</h1>
             </div>
+           
           );
         })}
-      </div>
+      </div>  
+        
            
         </div>
+        
 
         
     )

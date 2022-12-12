@@ -41,33 +41,41 @@ function Coachmodif () {
             <div></div>
           
         <div id="taille" >
-        <div id="decalage"><input
+        <div id="form__group"><input
           type="text"
+          class="form__field"
           placeholder="Nom..."
           onChange={(event) => {
             setName(event.target.value);
           }}
-        /></div>
-        
+        />
+        </div>
+
+        <br></br>
         <div><input
           type="number"
+          class="form__field"
           placeholder="Contact..."
           onChange={(event) => {
             setContact(event.target.value);
           }}
         /></div>
-         
+
+         <br></br>
          <div><input
           type="text"
+          class="form__field"
           placeholder="Nom de la photo..."
           onChange={(event) => {
             setPhoto(event.target.value);
           }}
         /></div>
-        
+
+        <br></br>
         <div></div>
         <input
           type="text"
+          class="form__field"
           placeholder="Spécialité..."
           onChange={(event) => {
             setSpecialite(event.target.value);
@@ -75,7 +83,7 @@ function Coachmodif () {
         />
       
 
-<div><button onClick={createCoach}> Modification des données </button></div>
+<div><button onClick={createCoach} className="styleb"> Ajouter mon dernier coach </button></div>
         
       </div>
 

@@ -7,7 +7,7 @@
 
 #fondM {
 
-  height: 950px;
+  height: 800px;
   max-height: 100%;
   max-width: 100%;
   background-color: bisque, 0.7;
@@ -24,20 +24,89 @@
 
 #titre {
   position: absolute;
-    margin-left: 30%;
+    margin-left: 40%;
     font-size: 20px;
     text-align:center;
     color: black;
+    font-family: 'Times New Roman';
 }
 
 #taille{
   
   
   margin-left: 30%;
+  margin-top: 10%;
 }
 
-#decalage{
 
-  margin-top: 20%;
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 40%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  
+}
+
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+
+.styleb {
+    
+  margin-right: 20%;
+  margin-top:10%;
+  border: 0;
+  border-radius: 10px;
+  width: 300px;
+  line-height: 3;
+  font-size: 1 rem;
+  text-align: center;
+  color: rgba(223, 147, 59) ;
+ /* background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);*/
+  background-color:white;
+  /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);*/
 
 }
+
+.styleb:hover {
+
+  background-color: rgba(223, 147, 59) ;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
+
+}
+
