@@ -44,13 +44,11 @@ function Widget2() {
 
 <h3> Fréquence d'activité physique par semaine </h3>
     
-    <div className="usersDisplay">
         {listOfUsers.map((user) => {
           return (
               <p>En moyenne : <h2 className='neon'> {user.activity} </h2> </p>
           );
         })}
-      </div>
             </div>
     
     

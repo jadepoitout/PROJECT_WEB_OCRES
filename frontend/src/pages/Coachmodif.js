@@ -6,7 +6,7 @@ import './Coachmodif.css';
 import { useState, useEffect } from "react";
 import Axios from "axios";
 
-function Coachmodif () {
+function Coachmodif() {
 
   const [listofCoach, setListofCoach] = useState([]);
   const [name, setName] = useState("");
@@ -33,22 +33,26 @@ function Coachmodif () {
     });
   };
 
-    return(
-        <div id="fondM">
+  return (
+    <div id="fondM">
 
-            <Navbar />
-            <div id="titre"><h1>Ajout d'un coach</h1></div>*
-            <div></div>
-          
-        <div id="taille" >
-        <div id="form__group"><input
-          type="text"
-          class="form__field"
-          placeholder="Nom..."
-          onChange={(event) => {
-            setName(event.target.value);
-          }}
-        />
+      <Navbar />
+      <div id="titre"><h1></h1></div>*
+      <div></div>
+
+      <div id="taille" >
+
+        <h1>Ajout d'un coach </h1>
+
+        <div id="form__group">
+          <input
+            type="text"
+            class="form__field"
+            placeholder="Nom..."
+            onChange={(event) => {
+              setName(event.target.value);
+            }}
+          />
         </div>
 
         <br></br>
@@ -61,8 +65,8 @@ function Coachmodif () {
           }}
         /></div>
 
-         <br></br>
-         <div><input
+        <br></br>
+        <div><input
           type="text"
           class="form__field"
           placeholder="Nom de la photo..."
@@ -72,23 +76,23 @@ function Coachmodif () {
         /></div>
 
         <br></br>
-        <div></div>
-        <input
+        <div><input
           type="text"
           class="form__field"
           placeholder="Spécialité..."
           onChange={(event) => {
             setSpecialite(event.target.value);
           }}
-        />
-      
+        /></div>
 
-<div><button onClick={createCoach} className="styleb"> Ajouter mon dernier coach </button></div>
-        
+
+
+        <div><button onClick={createCoach} className="styleb"> Ajouter mon dernier coach </button></div>
+
       </div>
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Coachmodif;

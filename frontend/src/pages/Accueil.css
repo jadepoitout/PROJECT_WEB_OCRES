@@ -5,25 +5,36 @@
     color: rgb(255, 255, 255);
     position: absolute;
     margin-left: 80%;
-    margin-top:10px;
+    margin-top: 10px;
     font-size: 35px;
-    text-align:center;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
+
+
 
 .fondA {
 
-    max-height: 100%;
     max-width: 100%;
-    background-color: url("../components/accueil.jpg");
-    background: rgb(52, 52, 52);   
-    opacity: 1.2;
-    
+    background-color: rgba(52, 52, 52, 1.2);
+    background: rgba(0, 0, 0, 0.7) url(../components/accueil.jpg);
+    background-blend-mode: darken;    
 }
+
+
 
 .fondA h1 {
 
     color: white;
+
+}
+
+#search {
+
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 2%;
+    opacity: 0.5;
 
 }

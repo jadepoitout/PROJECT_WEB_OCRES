@@ -47,6 +47,9 @@ background-color: rgb(220, 98, 57);
     max-width: 100%;
     background-color: bisque, 0.7;
     background: rgb(52, 52, 52);
+    background: rgba(0, 0, 0, 0.7) url(../components/accueil.jpg);
+    background-blend-mode: darken;
+
     
 }
 
@@ -82,12 +85,13 @@ background-color: rgb(220, 98, 57);
 .usersDisplay hr {
     border: none;
     margin-top: 40px;
-    margin-left: 0px;
-    box-shadow: 10px 10px 5em;
+    box-shadow: 10px 10px 5em rgb(121, 121, 121);
     border-top: 3px double white;
     color: white;
     overflow: visible;
     text-align: center;
-    height: 5px;
+    height: 3px;
+    width: 80%;
 }
+
 

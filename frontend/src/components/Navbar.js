@@ -38,10 +38,6 @@ function Navbar() {
         </div>
       </ul>
 
-
-
-      <img src="menu.png" alt="menu hamburger" class="menu-hamburger"></img>
-
     </div>
 
   )

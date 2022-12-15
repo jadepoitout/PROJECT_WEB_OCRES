@@ -28,7 +28,7 @@ function Dashboard(props) {
                 </Widget4>
                 
           <NavLink to="/coachmodif">
-          <button className="style-button"> Modifier mes derniers coaches</button>
+          <button className="style-button"> Réserver mon prochain coach </button>
           </NavLink>
                 
 

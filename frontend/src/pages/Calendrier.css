@@ -4,13 +4,20 @@
     max-width: 100%;
     background-color: bisque, 0.7;
     background: rgb(52, 52, 52);
-    
+    background: rgba(0, 0, 0, 0.7) url(../components/accueil.jpg);
+    background-blend-mode: darken;
+
 }
 
-.titre  {
+.fondC h1 {
+
+    color: white;
+}
+
+.titre {
 
     position: absolute;
-    margin-left: 40%;
+    margin-left: 80%;
     font-size: 40px;
     color: white;
 }

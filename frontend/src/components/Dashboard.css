@@ -27,18 +27,18 @@
 }
 
 .style-button {
-    
+
     margin-right: 20%;
-    margin-top:10%;
+    margin-top: 10%;
     border: 0;
     border-radius: 10px;
     width: 300px;
     line-height: 3;
     font-size: 1 rem;
     text-align: center;
-    color: rgba(223, 147, 59) ;
-   /* background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);*/
-    background-color:white;
+    color: rgba(223, 147, 59);
+    /* background: linear-gradient(to right, rgba(155, 156, 149, 0.74), rgba(196, 197, 189, 0.74), transparent);*/
+    background-color: white;
     /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);*/
 
@@ -46,7 +46,7 @@
 
 .style-button:hover {
 
-    background-color: rgba(223, 147, 59) ;
+    background-color: rgba(223, 147, 59);
     color: white;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), 0 0 1em rgba(223, 147, 59), 0 0 0.2em rgba(223, 147, 59);
 

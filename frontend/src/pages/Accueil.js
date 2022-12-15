@@ -14,13 +14,14 @@ class Accueil extends React.Component {
 
         return (
             <div className="fondA">
+
                 <div>
-                <h1 className="titre">ACCUEIL</h1>
-                <Navbar />
-                
+                    <h1 className="titre">Accueil</h1>
+                    <Navbar />
+
                     <Dashboard>
                     </Dashboard>
-                    </div>
+                </div>
 
             </div>
         )

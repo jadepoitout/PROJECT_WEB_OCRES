@@ -1,7 +1,7 @@
 import './Widget1.css';
 import React from 'react';
 import { useState, useEffect } from "react";
-import  image  from './Coach2.PNG';
+import  image  from './male.png';
 import Axios from "axios";
 
 
@@ -10,7 +10,7 @@ function Widget4 () {
 
   const [listofCoach, setListofCoach] = useState([]);
   const [name, setName] = useState("");
-  const [contact, setSurname] = useState("");
+  const [contact, setSurname] = useState(0);
   const [photo, setAge] = useState("");
   const [specialite, setWeight] = useState("");
 
@@ -43,24 +43,23 @@ function Widget4 () {
 
         return (
             <div className="widget1">
+              <h3> Mon prochain coach </h3>
+
     
-    <div>
         {listofCoach.slice(listofCoach.length-1,listofCoach.length).map((user) => {
           return (
              
-            <ul>
+            <div>
 
                <img id="logo" src={image} />
-              <p className='neon'> {user.name} </p> 
+              <p className='neon'> {user.name} - {user.specialite} </p> 
               <p className='neon'> {user.contact} </p> 
-              <p className='neon'> {user.specialite} </p> 
 
-            </ul>
+            </div>
               
               
           );
         })}
-      </div>
             </div>
     
     

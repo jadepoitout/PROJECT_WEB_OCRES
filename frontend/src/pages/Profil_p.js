@@ -51,12 +51,12 @@ function Profil ()
                    
         {listOfUsers.slice(0,1).map((user) => { 
           return ( 
-            <div>
+            <div id="centrer">
               <hr></hr>
               <h1>Nom: {user.name}</h1>
               <h1>Prénom: {user.surname}</h1>
               <h1>Âge: {user.age}</h1>
-              <h1>Poids: {user.weightj}</h1>
+              <h1>Dernier Poids: {user.weightma}</h1>
               <h1>Fréquence d'activité physique par semaine: {user.activity}</h1>
             </div>
            
